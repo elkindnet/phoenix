@@ -1,3 +1,5 @@
+<img src=http://phoenix-widget.com/static/img/logo.png>
+
 # phoenix
 phoenix widget
 
