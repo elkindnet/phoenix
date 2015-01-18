@@ -1,5 +1,5 @@
 <!doctype html>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
  <meta charset="UTF-8">
  <title></title>
 </head>
@@ -7,75 +7,96 @@
 
 <!-- временный стиль, для общего оформления -->
 <style>
-h4 {width:100%; background:#fff; color:#555; padding:50px 0 20px; font-weight:normal; font-size:28px; display:block;}
-.temporary-row {width:80%; margin:0 auto; background:#eee;}
+h4 {color:#999; padding:50px 0 0 20px; font-weight:bold; font-size:16px; display:block;}
+.temporary-row {width:70%; margin:0 auto;}
 </style>
 
 
 <style>
-div.phoenix a {font-family:arial, sans-serif; font-size:16px; color:#369;}
+div.phoenix a {font-family:arial, sans-serif; font-size:16px; color:#369; line-height: 22px}
 div.phoenix a:visited {color:#369;}
 div.phoenix a:hover {color:#888;}
 
 div.phoenix {display:table; padding:20px 0; margin-right: auto; margin-left: auto;}
 div.phoenix, div.phoenix img {max-width: 100%; width: 100%; }
 div.phoenix img {margin-bottom:10px;}
-div.phoenix-item {width: 33.33333333%; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; float: left;}
+div.phoenix-item {width: 33.33333333%; position: relative; padding-bottom: 25px; padding-left: 15px; padding-right: 15px; float: left;}
+
+div.phoenix-item-20 {width: 20.0%;}
 div.phoenix-item-25 {width: 25.0%;}
 div.phoenix-item-50 {width: 50.0%;}
 div.phoenix-item-100 {width: 100.0%;}
+
+div.phoenix-item-25 a, div.phoenix-item-20 a {font-size:14px; line-height: 16px}
+div.phoenix-item-50 a {font-size:18px; line-height: 22px}
+div.phoenix-item-100 a {font-size:20px; line-height: 24px}
+
+div.phoenix-item-vertical {width:100%;}
+
  * {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; }
 :before, :after {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; }
 
-div.phoenix-horizontal img {width:33.33333333%; float: left; padding:0 10px 40px 0;}
+div.phoenix-horizontal img {width:33.33333333%; float: left; margin:0 10px 0;}
 
-/*
 
 @media(max-width:980px) {
-div.phoenix-item { padding-left: 5px; padding-right: 5px;}
+div.phoenix-item { padding-left: 7px; padding-right: 7px;}
 }
 
-@media(max-width:700px) {
-div.phoenix a {font-size:14px;}
-}
+@media(max-width:700px) {}
 
 @media(max-width:490px) {
-div.phoenix-item { padding-left: 3px; padding-right: 3px;}
-div.phoenix a {font-size:12px;}
+ div.phoenix a {font-size:14px; line-height: 18px}
+ div.phoenix-item-25 a, div.phoenix-item-20 a {font-size:12px; line-height: 14px}
+ div.phoenix-item-50 a {font-size:15px;}
+ div.phoenix-item-100 a {font-size:15px;}
+ div.phoenix-item-vertical a {font-size:12px; line-height: 14px;}
 }
 
-*/
+/* цветная рамка*/
+div.phbackground { background: #49596B;}
+div.phbackground a, div.phbackground a:visited { color:#fff;}
 
-/* цветная рамка и бордюр */
-.phbackground { background:#ddd;}
+/* цветная рамка светлая*/
+div.phbackground-light { background: #eee;}
+div.phbackground-light a, div.phbackground-light a:visited { color:#369;}
+
+/* бордюр*/
 .phborder {border: 2px solid #ff6600;}
- 
+
+ /* анимация при наведении курсора */
+div.phoenix img { -webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;transition: all 0.2s ease;}
+div.phoenix img:hover {-moz-transform: scale(1.04);-webkit-transform: scale(1.04);-o-transform: scale(1.04);-ms-transform: scale(1.04);transform: scale(1.02);
+ -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .3); -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .3); box-shadow: 0 0 15px rgba(0, 0, 0, .3);}
+
  </style>
 
-
-
-<div class="temporary-row">
 <!-- временная хуйня-->
-<h4>Горизонтальный адаптивный виджет c фоном (3)</h4>
+<center><br><br><br><img src="http://phoenix-widget.com/static/img/logo.png"></center>
+<div class="temporary-row">
+
+
+ <!-- временная хуйня-->
+<h4>Горизонтальный адаптивный виджет c темным фоном (3)</h4>
 
 
  <!-- phoenix widget horizontal-->
  <div class="phoenix phbackground">
 
   <div class="phoenix-item"><a href="">
-   <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
    В Лас-Вегасе представили автомобиль-самоход
   </a>
   </div>
 
   <div class="phoenix-item"><a href="">
-   <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
    Первые скоростные поезда появились в Польше
   </a>
   </div>
 
   <div class="phoenix-item"><a href="">
-   <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
    Американский авианосец продали за 1 цент
   </a>
   </div>
@@ -86,25 +107,56 @@ div.phoenix a {font-size:12px;}
 
 
  <!-- временная хуйня-->
+ <h4>Горизонтальный адаптивный виджет со светлым фоном (3)</h4>
+
+
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix phbackground-light">
+
+  <div class="phoenix-item"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+  <div class="phoenix-item"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Американский авианосец продали за 1 цент
+  </a>
+  </div>
+
+ </div>
+
+ <!-- end phoenix widget horizontal-->
+
+
+
+ <!-- временная хуйня-->
 <h4>Горизонтальный адаптивный виджет c рамкой (3)</h4>
 
   <!-- phoenix widget horizontal-->
   <div class="phoenix phborder">
 
    <div class="phoenix-item"><a href="">
-    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+    <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
     В Лас-Вегасе представили автомобиль-самоход
    </a>
    </div>
 
    <div class="phoenix-item"><a href="">
-    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+    <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
     Первые скоростные поезда появились в Польше
    </a>
    </div>
 
    <div class="phoenix-item"><a href="">
-    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+    <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
     Американский авианосец продали за 1 цент
    </a>
    </div>
@@ -121,13 +173,13 @@ div.phoenix a {font-size:12px;}
    <div class="phoenix">
 
     <div class="phoenix-item phoenix-item-50"><a href="">
-     <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+     <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
      В Лас-Вегасе представили автомобиль-самоход
     </a>
     </div>
 
     <div class="phoenix-item phoenix-item-50"><a href="">
-     <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+     <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
      Первые скоростные поезда появились в Польше
     </a>
     </div>
@@ -144,7 +196,7 @@ div.phoenix a {font-size:12px;}
     <div class="phoenix">
 
      <div class="phoenix-item phoenix-item-100"><a href="">
-      <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+      <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
       В Лас-Вегасе представили автомобиль-самоход
      </a>
      </div>
@@ -163,32 +215,97 @@ div.phoenix a {font-size:12px;}
      <div class="phoenix">
 
       <div class="phoenix-item phoenix-item-25"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        В Лас-Вегасе представили автомобиль-самоход
       </a>
       </div>
 
       <div class="phoenix-item phoenix-item-25"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        Первые скоростные поезда появились в Польше
       </a>
       </div>
 
       <div class="phoenix-item phoenix-item-25"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        В Лас-Вегасе представили автомобиль-самоход
       </a>
       </div>
 
       <div class="phoenix-item phoenix-item-25"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        Первые скоростные поезда появились в Польше
       </a>
       </div>
-
 
      </div>
      <!-- end phoenix widget horizontal-->
+
+
+ <!-- временная хуйня-->
+ <h4>Горизонтальный адаптивный виджет (5)</h4>
+
+
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix">
+
+  <div class="phoenix-item phoenix-item-20"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-20"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-20"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-20"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-20"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+
+ </div>
+ <!-- end phoenix widget horizontal-->
+
+
+
+ <!-- временная хуйня-->
+ <h4>Горизонтальный адаптивный текст справа (2)</h4>
+
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix phoenix-horizontal">
+
+  <div class="phoenix-item phoenix-item-50"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-50"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+
+ </div>
+ <!-- end phoenix widget vertical-->
 
 
      <!-- временная хуйня-->
@@ -197,20 +314,20 @@ div.phoenix a {font-size:12px;}
      <!-- phoenix widget horizontal-->
      <div class="phoenix phoenix-horizontal">
 
-      <div class="phoenix-item phoenix-item"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+      <div class="phoenix-item"><a href="">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        В Лас-Вегасе представили автомобиль-самоход
       </a>
       </div>
 
-      <div class="phoenix-item phoenix-item"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+      <div class="phoenix-item"><a href="">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        Первые скоростные поезда появились в Польше
       </a>
       </div>
 
-      <div class="phoenix-item phoenix-item"><a href="">
-       <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+      <div class="phoenix-item"><a href="">
+       <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
        В Лас-Вегасе представили автомобиль-самоход
       </a>
       </div>
@@ -219,29 +336,103 @@ div.phoenix a {font-size:12px;}
      <!-- end phoenix widget vertical-->
 
 
+ <!-- временная хуйня-->
+ <h4>Горизонтальный адаптивный текст справа (4)</h4>
+
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix phoenix-horizontal">
+
+  <div class="phoenix-item phoenix-item-25"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-25"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-25"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-25"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
 
 
-      <!-- временная хуйня-->
-<h4>Горизонтальный адаптивный текст справа (2)</h4>
-
-       <!-- phoenix widget horizontal-->
-       <div class="phoenix phoenix-horizontal">
-
-        <div class="phoenix-item phoenix-item-50"><a href="">
-         <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
-         В Лас-Вегасе представили автомобиль-самоход
-        </a>
-        </div>
-
-        <div class="phoenix-item phoenix-item-50"><a href="">
-         <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
-         Первые скоростные поезда появились в Польше
-        </a>
-        </div>
+ </div>
+ <!-- end phoenix widget vertical-->
 
 
-       </div>
-       <!-- end phoenix widget vertical-->
+
+
+
+ <!-- временная хуйня-->
+ <h4>Вертикальный адаптивный текст справа (~)</h4>
+
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix phoenix-horizontal">
+
+  <div class="phoenix-item phoenix-item-vertical"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-vertical"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-vertical"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+ </div>
+ <!-- end phoenix widget vertical-->
+
+
+
+ <!-- временная хуйня-->
+ <br><h4>Адаптивный вертикальный виджет (~)</h4>
+
+
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix">
+
+  <div class="phoenix-item phoenix-item-100"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+
+  <div class="phoenix-item phoenix-item-100"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+  <div class="phoenix-item phoenix-item-100"><a href="">
+   <img src="http://codedesign.elkind.net/wp-content/uploads/156H.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
+
+ </div>
+ <!-- end phoenix widget horizontal-->
+
+
 
 
 </div>
