@@ -1,14 +1,25 @@
-<!doctype html><head><meta charset="UTF-8"><title></title></head><body>
- 
+<!doctype html>
+<head>
+ <meta charset="UTF-8">
+ <title></title>
+</head>
+<body style="margin:0; padding:0; font-family:Arial, sans-serif; text-align: center">
+
+
+
 <style>
-div.phoenix a {font-family:arial; font-size:16px; color:#369;}
+div.phoenix a {font-family:arial, sans-serif; font-size:16px; color:#369;}
 div.phoenix a:visited {color:#369;}
 div.phoenix a:hover {color:#888;}
 
-div.phoenix {overflow:hidden; margin:20px auto;}
+div.phoenix {display:table; padding:20px 0; margin-right: auto; margin-left: auto;}
 div.phoenix, div.phoenix img {max-width: 100%; width: 100%; }
 div.phoenix img {margin-bottom:10px;}
-div.phoenix-item {width: 30%; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; float: left; overflow:hidden;}
+div.phoenix-item {width: 33.33333333%; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; float: left;}
+ * {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; }
+:before, :after {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; }
+
+/*
 
 @media(max-width:980px) {
 div.phoenix-item { padding-left: 5px; padding-right: 5px;}
@@ -22,26 +33,73 @@ div.phoenix a {font-size:14px;}
 div.phoenix-item { padding-left: 3px; padding-right: 3px;}
 div.phoenix a {font-size:12px;}
 }
+
+*/
  </style>
 
+<!-- временная хуйня-->
+<h1>Горизонтальный виджет c фоном</h1>
+<div class="temporary-row" style="width:80%; margin:0 auto; background:#ddd;">
 
-<div class="phoenix">
 
-<a href=""><div class="phoenix-item">
-<img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
-В Лас-Вегасе представили автомобиль-самоход
-</div></a>
+ <!-- phoenix widget horizontal-->
+ <div class="phoenix">
 
-<a href=""><div class="phoenix-item">
-<img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
-Первые скоростные поезда появились в Польше
-</div></a>
+  <div class="phoenix-item"><a href="">
+   <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+   В Лас-Вегасе представили автомобиль-самоход
+  </a>
+  </div>
 
-<a href=""><div class="phoenix-item">
-<img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
-Американский авианосец продали за 1 цент
-</div></a>
+  <div class="phoenix-item"><a href="">
+   <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+   Первые скоростные поезда появились в Польше
+  </a>
+  </div>
 
-<div><!-- end phoenix widget -->
+  <div class="phoenix-item"><a href="">
+   <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+   Американский авианосец продали за 1 цент
+  </a>
+  </div>
 
-</body></html>
+  </div>
+
+
+ <!-- end phoenix widget horizontal-->
+
+</div>
+
+ <!-- временная хуйня-->
+ <h1>Горизонтальный виджет без фона</h1>
+ <div class="temporary-row" style="width:80%; margin:0 auto;">
+
+
+  <!-- phoenix widget horizontal-->
+  <div class="phoenix">
+
+   <div class="phoenix-item"><a href="">
+    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+    В Лас-Вегасе представили автомобиль-самоход
+   </a>
+   </div>
+
+   <div class="phoenix-item"><a href="">
+    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+    Первые скоростные поезда появились в Польше
+   </a>
+   </div>
+
+   <div class="phoenix-item"><a href="">
+    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+    Американский авианосец продали за 1 цент
+   </a>
+   </div>
+
+   </div>
+    <!-- end phoenix widget horizontal-->
+</div>
+
+
+</body>
+</html>
