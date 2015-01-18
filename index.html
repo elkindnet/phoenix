@@ -16,6 +16,7 @@ div.phoenix {display:table; padding:20px 0; margin-right: auto; margin-left: aut
 div.phoenix, div.phoenix img {max-width: 100%; width: 100%; }
 div.phoenix img {margin-bottom:10px;}
 div.phoenix-item {width: 33.33333333%; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; float: left;}
+div.phoenix-item-50 {width: 50.0%;}
  * {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; }
 :before, :after {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; }
 
@@ -35,15 +36,18 @@ div.phoenix a {font-size:12px;}
 }
 
 */
+
+.phbakground { background:#ddd;}
  </style>
 
+<div class="temporary-row" style="width:80%; margin:0 auto; background:#eee;">
 <!-- временная хуйня-->
-<h1>Горизонтальный виджет c фоном</h1>
-<div class="temporary-row" style="width:80%; margin:0 auto; background:#ddd;">
+ <br><h4>Горизонтальный адаптивный виджет c фоном (3)</h4>
+<div class="temporary-row" style="width:100%%; margin:0 auto;">
 
 
  <!-- phoenix widget horizontal-->
- <div class="phoenix">
+ <div class="phoenix phbakground">
 
   <div class="phoenix-item"><a href="">
    <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
@@ -65,14 +69,13 @@ div.phoenix a {font-size:12px;}
 
   </div>
 
-
  <!-- end phoenix widget horizontal-->
 
 </div>
 
  <!-- временная хуйня-->
- <h1>Горизонтальный виджет без фона</h1>
- <div class="temporary-row" style="width:80%; margin:0 auto;">
+ <br><h4>Горизонтальный адаптивный виджет (3)</h4>
+ <div class="temporary-row" style="width:100%%; margin:0 auto;">
 
 
   <!-- phoenix widget horizontal-->
@@ -98,8 +101,36 @@ div.phoenix a {font-size:12px;}
 
    </div>
     <!-- end phoenix widget horizontal-->
+
+
+  <!-- временная хуйня-->
+  <br><h4>Горизонтальный адаптивный виджет (2)</h4>
+  <div class="temporary-row" style="width:100%%; margin:0 auto;">
+
+
+   <!-- phoenix widget horizontal-->
+   <div class="phoenix">
+
+    <div class="phoenix-item phoenix-item-50"><a href="">
+     <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+     В Лас-Вегасе представили автомобиль-самоход
+    </a>
+    </div>
+
+    <div class="phoenix-item phoenix-item-50"><a href="">
+     <img src="http://mignews.com/aimages/01_15/080115_161342_39333_2.jpg">
+     Первые скоростные поезда появились в Польше
+    </a>
+    </div>
+
+   </div>
+   <!-- end phoenix widget horizontal-->
+
+
 </div>
 
 
+
+</div>
 </body>
 </html>
